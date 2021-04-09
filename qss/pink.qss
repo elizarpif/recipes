@@ -1,0 +1,80 @@
+QWidget {
+    background-color: white;
+}
+
+QFrame {
+    border-radius: 55px;
+    border-width: 5px;
+    border-color: #ae32a0;
+    border-style: double;
+    background-color: white;
+}
+
+QLabel {
+    font: medium Ubuntu;
+    font-size: 20px;
+    color: #d998ce;
+    border-width: 0px;
+    /*background-image: url(:/bktop_Qt_5_3_MinGW_32bit-Debug/debug/candy.jpg);*/
+}
+
+QPushButton {
+    background-color: rgb(47, 155, 255);
+    color: white;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: rgb(172, 194, 255);
+    border-style: solid;
+}
+
+QPushButton:hover {
+    background-color: rgb(255, 170, 0);
+}
+
+QPushButton:pressed {
+    background-color: rgb(255, 153, 29);
+}
+
+QLineEdit {
+    font: medium Ubuntu;
+    font-size: 20px;
+    padding: 1px;
+    border-style: none none double none;
+    border-width: 2px;
+    border-radius: 0px;
+    border-color: #ae32a0;
+    /*background-image: url(:/bktop_Qt_5_3_MinGW_32bit-Debug/debug/candy.jpg);*/
+}
+
+QLineEdit:hover {
+    background-color: #d998ce;
+    /*background-image: url(:/bktop_Qt_5_3_MinGW_32bit-Debug/debug/candy.jpg);*/
+}
+
+QSpinBox {
+    padding: 1px;
+    border-style: none none double none;
+    border-width: 2px;
+    border-radius: 0px;
+    border-color: #ae32a0;
+}
+
+QSpinBox:hover {
+    background-color: #d998ce;
+}
+
+QGroupBox {
+    font: medium Ubuntu;
+    font-size: 20px;
+    color: #d998ce;
+    font-weight: bold;
+    padding: 4px;
+    margin-top: 16px;
+    padding: 1px;
+}
+
+QRadioButton {
+    font: medium Ubuntu;
+    font-size: 20px;
+    color: #ae32a0;
+}
