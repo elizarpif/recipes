@@ -2,14 +2,14 @@
 ## Сборник рецептов
 
 
-Команды после создания репозитория
+Создал репу, и что дальше?
 [newrepository.md](https://github.com/elizarpif/recipes/blob/develop/newrepository.md)
 
-Команды для тестирования бенчмарками
+Вау! Бенчмарки! А как запускать-то?
 [benchmarks.md](https://github.com/elizarpif/recipes/blob/develop/benchmarks.md)
 
-Ссылки на qt, если нужно бахнуть интерфейс, а ты знаешь go
+Если нужно сдать красивую приложеньку, а ты знаешь go и можешь нарисовать интерфейс в qt
 [qt.md](https://github.com/elizarpif/recipes/blob/develop/qt.md)
 
-qss стили
+Раскрасим серые окна в яркие цвета радуги!
 [qss](https://github.com/elizarpif/recipes/tree/develop/qss)
