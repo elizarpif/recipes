@@ -10,6 +10,37 @@ s = "R"+s[1:] // OK
 println(s)
 ```
 
+### defer
+```go
+// direct statements
+i := 0
+defer fmt.Println(i)                    // prints 0
+defer func() { fmt.Println(i) }()       // prints 1
+defer func(i int) { fmt.Println(i) }(i) // prints 0
+i++
+
+// for statement
+for i := 0; i < 5; i++ {
+    defer func(i *int) {
+        print(*i, " ")
+    }(&i) // prints 5 5 5 5 5
+
+    defer func(i int) {
+        print(i, " ")
+    }(i) // prints 4 3 2 1 0
+}
+```
+
+### slices
+```go
+// slices
+test1 := []int{1, 2, 3, 4, 5} // len=5, cap=5
+test1 = test1[:3]             // len=3, cap=5
+test2 := test1[3:]            // len=0, cap=2
+test3 := test2[:2]            // len=2, cap=2
+fmt.Println(test3)            // prints [4, 5]
+```
+
 ### difference between sync.Mutex and sync.RWMutex
 sync.Mutex has 2 methods for use:
 ```go
