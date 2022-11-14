@@ -103,6 +103,20 @@ sendq - pointer of the linked list of the goroutings waiting for write
 lock - mutex for safety
 ```
 
+#### maps under the hood
+Unordered hashtable. It consists of:
+- len (len of elements)
+- lg(buckets) (len of buckets, described in logarifm for speed)
+- buckets (array of buckets)
+- hash seed (keys randomization)
+- etc ...
+
+1 bucket - 8 pairs key-value (extra hash bits, list of keys, list of values, pointer to the next bucket)
+`// Maximum average load of a bucket that triggers growth is 6.5.`
+
+Don't take pointer of the value! Because map can use evacuation 
+
+
 
 ### interfaces
 ```go
